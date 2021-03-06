@@ -7,13 +7,13 @@ on:
  watch:
    types: started
  repository_dispatch:
-   types: ziye12
+   types: 6Svip120apk69
 
 jobs:
   mirror:
     env:
       PAT: ${{ secrets.PAT }} #当前库的pat
-      DEFAULT_DST: github/New-Sina
+      DEFAULT_DST: github/6Svip120apk69
       DEFAULT_RENAME_FMT: 's/(.*)/${SRC_TYPE}_${SRC_ACCOUNT}_\1/g'
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
@@ -42,8 +42,3 @@ jobs:
           rename_dst: true
           # clone_style: https
           rename_fmt: ${{ env.DEFAULT_RENAME_FMT }}
-
-
-
-
-
