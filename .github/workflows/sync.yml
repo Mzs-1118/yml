@@ -12,7 +12,7 @@ on:
 jobs:
   mirror:
     env:
-      PAT: ${{ secrets.PAT }} #当前库的pat
+      PAT: ${{ secrets.PAT }} # 当前库的pat
       DEFAULT_DST: github/6Svip120apk69
       DEFAULT_RENAME_FMT: 's/(.*)/${SRC_TYPE}_${SRC_ACCOUNT}_\1/g'
     runs-on: ubuntu-latest
