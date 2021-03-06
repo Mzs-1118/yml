@@ -29,14 +29,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cache-actions
 
-      - name: mirror gitee/ziye12
+      - name: mirror gitee/q8qsTAUA
         uses: fakedon/hub-mirror-action@fakedon
         with:
-          src: gitee/ziye12
+          src: gitee/q8qsTAUA
           dst: ${{ env.DEFAULT_DST }}
           dst_key: ${{ secrets.ZIYE_GITHUB_SSH_KEY }}
           dst_token: ${{ secrets.ZIYE_GITHUB_TOKEN }}
-          static_list: "JavaScript"
+          static_list: "cThxc1RBVUE"
           dst_account_type: user
           force_update: true
           rename_dst: true
