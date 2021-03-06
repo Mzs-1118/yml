@@ -36,7 +36,7 @@ jobs:
           dst: ${{ env.DEFAULT_DST }}
           dst_key: ${{ secrets.ZIYE_GITHUB_SSH_KEY }}
           dst_token: ${{ secrets.ZIYE_GITHUB_TOKEN }}
-          static_list: "JavaScriptss"
+          static_list: "JavaScript"
           dst_account_type: user
           force_update: true
           rename_dst: true
