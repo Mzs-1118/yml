@@ -12,7 +12,7 @@ on:
 jobs:
   mirror:
     env:
-      PAT: ${{ secrets.PAT }} # 当前库的pat
+      PAT: ${{ secrets.PAT }} #当前库的pat
       DEFAULT_DST: github/6Svip120apk69
       DEFAULT_RENAME_FMT: 's/(.*)/${SRC_TYPE}_${SRC_ACCOUNT}_\1/g'
     runs-on: ubuntu-latest
@@ -29,10 +29,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cache-actions
 
-      - name: mirror gitee/q8qsTAUA
+      - name: mirror gitee/ziye12
         uses: fakedon/hub-mirror-action@fakedon
         with:
-          src: gitee/q8qsTAUA
+          src: gitee/ziye12
           dst: ${{ env.DEFAULT_DST }}
           dst_key: ${{ secrets.ZIYE_GITHUB_SSH_KEY }}
           dst_token: ${{ secrets.ZIYE_GITHUB_TOKEN }}
